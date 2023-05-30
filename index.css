@@ -1,0 +1,104 @@
+:root {
+    --background-color: rgb(3, 18, 67);
+    --border-color: rgba(247, 239, 239, 0.918);
+    --highlight-color: rgb(142, 99, 215);
+    --navbar-color: rgb(190, 190, 245);
+  }
+
+
+  .topnav{
+    background-color: var(--background-color);
+    overflow: hidden;
+    border-bottom: 0.1rem solid rgba(247, 239, 239, 0.918);
+  
+  }
+  .topnav a {
+    color: white;
+    float: left;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 20px 18px;
+    margin-bottom: 3px;    
+
+  }
+  .topnav a:hover{
+    background-color:  #FBEAEB;
+  }
+
+  .topnav a.active {
+    background-color: gray;
+    color: wheat;
+  }
+
+  .topnav button {
+    background-color:  gray;
+    color: wheat;
+    font-size: 25px;
+    float: right;
+    margin-top: 2px;
+    border-radius: 10%;
+    padding: 20px 18px;
+    margin-bottom: 3px;
+    text-decoration: none;
+  }
+  .topnav button:hover {
+    background-color: rgb(130, 70, 17);
+  }
+  img {
+    width: 85%;
+    height: 750px;
+    
+  }
+
+  body {
+    background-color: var(--background-color);
+  }
+button {
+    
+        background-color:  gray;
+        color: wheat;
+        font-size: 25px;
+        align-items: center;
+        margin-top: 2px;
+        border-radius: 10%;
+        padding: 20px 18px;
+        margin-bottom: 3px;
+        gap: 2000px;
+        text-decoration: none;
+
+      }
+      button:hover {
+        background-color: rgb(130, 70, 17);
+      }
+      .btn1{
+        margin-right: 250px;
+        margin-left: 100px;
+        background-color:  gray;
+        color: wheat;
+        text-decoration: none;
+        }
+        .btn2{
+
+            margin-right: 250px;
+            background-color:  gray;
+            color: wheat;
+            
+            }
+            .btn3{
+                background-color:  gray;
+                color: wheat;
+                margin-right: 250px;
+                
+                }
+                .btn4{
+                    background-color:  gray;
+                    color: wheat;
+                    margin-right: 250px;
+                    
+                    }
+                    .btn5{
+                        background-color:  gray;
+                        color: wheat;
+                        margin-right: ;
+                        
+                        }
