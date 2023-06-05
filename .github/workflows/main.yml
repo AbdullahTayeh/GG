@@ -1,6 +1,9 @@
-name: Deploy to DockerHub
+name: Deploy to test server
 
 on:
+    push:
+        branches:
+            - master
     workflow_dispatch:
 
 jobs:
@@ -17,9 +20,9 @@ jobs:
             password: ${{ secrets.DOCKER_HUB_API_KEY }}
             
 
-        - name: Build and push Docker image
+        - name: Build and push Docker images
           uses: docker/build-push-action@v4.0.0
           with:
              context: .
              push: true
-             tags: zinx666/project2
+             tags: zinx666/project:v1
