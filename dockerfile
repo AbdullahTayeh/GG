@@ -1,13 +1,8 @@
-FROM busybox:1.35
+# Use the official Nginx image as the base
+FROM nginx:latest
 
-# Create a non-root user to own the files and run our server
-RUN adduser -D static
-USER static
-WORKDIR /home/static
+# Copy the static HTML files to the appropriate location
+COPY ./cards_test /usr/share/nginx/html
 
-# Copy the static website
-# Use the .dockerignore file to control what ends up inside the image!
-COPY . .
-
-# Run BusyBox httpd
-CMD ["busybox", "httpd", "-f", "-v", "-p", "3000"]
+# Expose port 80 for HTTP traffic
+EXPOSE 80
