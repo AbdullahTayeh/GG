@@ -1,0 +1,92 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    min-height: 100%;
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 24px;
+    max-width: 1800px;
+    width: 100%;
+
+}
+
+.card{
+    position: relative;
+    list-style: none;
+    height: 700px;
+
+}
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.75) saturate(1, .2) contrast(0.85);
+    transform: scale(1) translateZ(0);
+    transform-origin: center;
+    transition: filter 200ms linear, transform 200mx linear;
+}
+.card:hover .background{
+transform: scale(1.05) translateZ(0);
+}
+.card-grid:hover >  .card:not(:hover) .background{
+    filter: brightness(0.5) saturate(0) contrast(0.85) blur();
+    }
+.content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 24px;
+
+}
+.content .category{
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    font-size: 0.9rem 
+}
+.content .heading{
+    color: rgba(12, 13, 13, 0.6);
+    font-size: 1.9rem; 
+    line-height: 1.4;
+    word-spacing: 100vw;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 960px){
+    .card-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 460px){
+    .card-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+#elearning{
+    color: #8d8888;
+}
+#research{
+    color: #d0cccc;
+}
+#data{
+    color: #f9f3f3;
+}
