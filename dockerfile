@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-WORKDIR /app/static
+WORKDIR /app
 
 COPY . .
 
