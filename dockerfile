@@ -2,7 +2,7 @@
 FROM nginx:latest
 
 # Copy the static HTML files to the appropriate location
-COPY ./cards_test /usr/share/nginx/html
+COPY ./cards_test /usr/share/nginx/html/cards_test
 
 COPY ./* /usr/share/nginx/html
 

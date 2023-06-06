@@ -42,7 +42,7 @@ body {
     filter: brightness(0.75) saturate(1, .2) contrast(0.85);
     transform: scale(1) translateZ(0);
     transform-origin: center;
-    transition: filter 200ms linear, transform 200mx linear;
+    transition: filter 200ms linear, transform 200ms linear;
 }
 .card:hover .background{
 transform: scale(1.05) translateZ(0);
