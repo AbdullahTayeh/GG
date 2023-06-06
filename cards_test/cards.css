@@ -63,7 +63,7 @@ transform: scale(1.05) translateZ(0);
     font-size: 0.9rem 
 }
 .content .heading{
-    color: rgba(187, 7, 169, 0.6);
+    color: rgba(12, 13, 13, 0.6);
     font-size: 1.9rem; 
     line-height: 1.4;
     word-spacing: 100vw;
@@ -81,4 +81,12 @@ transform: scale(1.05) translateZ(0);
         grid-template-columns: repeat(2,1fr);
     }
 }
-
+#elearning{
+    color: #8d8888;
+}
+#research{
+    color: #d0cccc;
+}
+#data{
+    color: #f9f3f3;
+}
