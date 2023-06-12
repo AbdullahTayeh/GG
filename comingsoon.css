@@ -4,7 +4,9 @@
     --highlight-color: rgb(142, 99, 215);
     --navbar-color: rgb(190, 190, 245);
   }
-
+*{
+  font-family: Londrina Solid;
+}
 
   .topnav{
     background-color: var(--background-color);
@@ -46,7 +48,10 @@
     background-color: rgb(130, 70, 17);
   }
  
-
+html, body{
+  margin: 0;
+  padding: 0;
+}
 
 
   main{
@@ -57,8 +62,6 @@
     min-width: 100vh;
     height: 100vh;
     background-color: #333;
-    margin-top: 0;
-    
 
   }
   .container{
