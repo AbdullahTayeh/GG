@@ -1,51 +1,64 @@
-/* 
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    height: 950px;
+:root {
+    --background-color: #002244;
+    --border-color: rgba(247, 239, 239, 0.918);
+    --highlight-color: rgb(142, 99, 215);
+    --navbar-color: rgb(190, 190, 245);
   }
-  .paragraph{
-    position: relative;
-    text-align: center;
+
+
+  .topnav{
+    background-color: var(--background-color);
+    overflow: hidden;
+    border-bottom: 0.1rem solid rgba(247, 239, 239, 0.918);
+    font-family: Londrina Solid;
+  }
+  .topnav a {
     color: white;
+    float: left;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 20px 18px;
+    margin-bottom: 3px;    
+    font-family: Londrina Solid;
   }
-   */
-/* 
-   body {
-    background-image: url("/Images/wallpaperflare.com_wallpaper.jpg");
-    background-color: #cccccc;
-    background-size: auto;
-    margin-left: auto;
-    margin-right: auto;
-   }
-    */
-
-
-
-
-
-
-
-
-
-
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-      font-family: londrina 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  .topnav a:hover{
+    background-color:  #FBEAEB;
   }
 
-  body{
-    margin-top: 150px;
+  .topnav a.active {
+    background-color: #72A0C1;
+    color: wheat;
+  }
+
+  .topnav button {
+    background-color:  #72A0C1;
+    color: wheat;
+    font-size: 25px;
+    float: right;
+    margin-top: 2px;
+    border-radius: 10%;
+    padding: 20px 18px;
+    margin-bottom: 3px;
+    text-decoration: none;
+    font-family: Londrina Solid;
+  }
+  .topnav button:hover {
+    background-color: rgb(130, 70, 17);
+  }
+ 
+
+
+
+  main{
+    
     display: flex;
     justify-content: center;
     align-items: center;
     min-width: 100vh;
+    height: 100vh;
     background-color: #333;
+    margin-top: 0;
+    
 
   }
   .container{
@@ -60,14 +73,14 @@
   .card{
     position: relative;
     width: 350px;
-    height: 180px;
+    height: 350px;
     background-color: #fff;
-    transition: 0.5s;
+    transition: 0.7s;
 
   }
 
   .card:hover{
-    height: 450px;
+    height: 600px;
   }
 
   .card .lines{
@@ -92,6 +105,11 @@
   animation-play-state: running;
 }
 
+img {
+    width: 85%;
+    height: 85%;
+    
+  }
 @keyframes animate
 {
   0%
@@ -115,7 +133,7 @@
 
 .card .imgBx{
   position: absolute;
-  top: -50%;
+  top: -30%;
   left: 50%;
   width: 150px;
   height: 150px;
@@ -250,6 +268,3 @@ transition: 0.5s;
 
 
 
-
-
-       
