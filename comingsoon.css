@@ -7,6 +7,10 @@
 *{
   font-family: Londrina Solid;
 }
+html, body{
+  margin: 0;
+  padding: 0;
+}
 
   .topnav{
     background-color: var(--background-color);
@@ -48,10 +52,7 @@
     background-color: rgb(130, 70, 17);
   }
  
-html, body{
-  margin: 0;
-  padding: 0;
-}
+
 
 
   main{
