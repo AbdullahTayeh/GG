@@ -1,6 +1,6 @@
 body {
-    --color-primary: #009579;
-    --color-primary-dark: #007f67;
+    --color-primary: #002244;
+    --color-primary-dark: #002244;
     --color-secondary: #252c6a;
     --color-error: #cc3333;
     --color-success: #4bb544;
@@ -14,6 +14,7 @@ body {
     font-size: 18px;
     background: url(./background.jpg);
     background-size: cover;
+    background-color: #002244;
 }
 
 .container {
