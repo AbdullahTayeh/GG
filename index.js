@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function setFormMessage(formElement, type, message) {
     const messageElement = formElement.querySelector(".form__message");
 
@@ -52,3 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+=======
+//this is js file
+>>>>>>> 7cb1652b4694661576f2dbc316a6040b070cc8f2
