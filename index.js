@@ -1,3 +1,79 @@
+// Get chatbot elements
+
+const name = document.querySelector("#name")
+const chatbot = document.getElementById('chatbot');
+const conversation = document.getElementById('conversation');
+const inputForm = document.getElementById('input-form');
+const inputField = document.getElementById('input-field');
+
+
+inputForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const input = inputField.value;
+
+    inputField.value = '';
+    const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: "2-digit" });
+
+    
+    let message = document.createElement('div');
+    message.classList.add('chatbot-message', 'user-message');
+    message.innerHTML = `<p class="chatbot-text" sentTime="${currentTime}">${input}</p>`;
+    conversation.appendChild(message);
+
+    const response = generateResponse(input);
+
+    message = document.createElement('div');
+    message.classList.add('chatbot-message', 'chatbot');
+    message.innerHTML = `<p class="chatbot-text" sentTime="${currentTime}">${response}</p>`;
+    conversation.appendChild(message);
+    message.scrollIntoView({ behavior: "smooth" });
+});
+
+
+function generateResponse(input) {
+    const keyword = input.toLowerCase();
+
+    if (keyword.includes('service')) {
+        return 'For service inquiries, please contact us at service@codemade.com or call +1-123-456-7890.';
+    } else if (keyword.includes('sale')) {
+        return 'For sales inquiries, please contact us at sales@codemade.com or call +1-987-654-3210.';
+    } else if (keyword.includes('hi')) {
+        return ('Hello! Type service or sales for contact information')
+    } else if (keyword.includes('hello')) {
+        return 'Hello! Type service or sales for contact information'
+    } else {
+        
+        const responses = [
+            "Hello, how can I help you today? 😊",
+            "I'm sorry, I didn't understand your question. Could you please rephrase it? 😕",
+        ];
+        return responses[Math.floor(Math.random() * responses.length)];
+    }
+}
+
+
+function toggleContent() {
+    const chatbotContainer = document.getElementById('containerid');
+    if (chatbotContainer.style.display === 'none') {
+        chatbotContainer.style.display = 'block';
+    } else { chatbotContainer.style.display = 'none' }
+}
+
+
+function services() {
+    const trigger = [
+
+    ];
+}
+
+
+
+
+
+
+// sign-up form //
+
 function setFormMessage(formElement, type, message) {
     const messageElement = formElement.querySelector(".form__message");
 
@@ -52,3 +128,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
