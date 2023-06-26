@@ -129,4 +129,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
+$(document).ready(function() {
+    setTimeout(function() {
+      $('#containerid').show();
+    }, 3000); // 3000 milliseconds (3 seconds) is the delay before the element pops up
+  });
