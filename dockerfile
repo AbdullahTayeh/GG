@@ -1,7 +1,7 @@
 # Use the official Nginx image as the base
 FROM nginx:latest
 
-# Copy the static HTML files to the appropriate location
+# Copy the static HTML files to the appropriate location :)
 ADD ./ /usr/share/nginx/html/
 
 
