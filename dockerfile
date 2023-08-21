@@ -10,3 +10,7 @@ EXPOSE 80
 
 RUN echo "Docker Container running on port 80"
 
+FROM python:3
+
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir nibabel pydicom matplotlib pillow med2image
