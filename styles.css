@@ -97,14 +97,14 @@ transform: scale(1.05) translateZ(0);
 .chatbot-container {
     width: 450px;
     height: 600px;
-    margin: 25px 50px 75px 100px;
+    margin: 25px -12px 70px 100px;
     background-color: #c9d2d3;
     border: 1px solid #410c79;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     justify-content: end;
-    position: fixed;
-    bottom: 100px;
+    position: absolute;
+    bottom: 40px;
     right: 10px;
     
   }
@@ -216,7 +216,7 @@ transform: scale(1.05) translateZ(0);
   }
   
   #fold-unfold {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     right: 0;
     padding: 30px 60px;
