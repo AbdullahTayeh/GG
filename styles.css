@@ -20,7 +20,7 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 24px;
-    max-width: 2000px;
+    max-width: 1700px;
     width: 100%;
 
 }
@@ -28,8 +28,7 @@ body {
 .card{
     position: relative;
     list-style: none;
-    height: 400px;
-
+    height: 700px;
 }
 .background{
     position: absolute;

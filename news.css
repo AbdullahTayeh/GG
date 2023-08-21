@@ -80,44 +80,7 @@ button:hover {
   background-color: rgb(130, 70, 17);
 }
 
-.btn1 {
-  margin-right: 150px;
-  margin-left: 120px;
-  background-color: #72A0C1;
-  color: wheat;
-  text-decoration: none;
 
-}
-
-.btn2 {
-
-  margin-right: 150px;
-  background-color: #72A0C1;
-  color: wheat;
-
-
-}
-
-.btn3 {
-  background-color: #72A0C1;
-  color: wheat;
-  margin-right: 150px;
-
-}
-
-.btn4 {
-  background-color: #72A0C1;
-  color: wheat;
-  margin-right: 150px;
-
-}
-
-.btn5 {
-  background-color: #72A0C1;
-  color: wheat;
-
-
-}
 
 
 .glow-on-hover {
