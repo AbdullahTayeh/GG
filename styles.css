@@ -20,7 +20,7 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 24px;
-    max-width: 1800px;
+    max-width: 2000px;
     width: 100%;
 
 }
@@ -28,7 +28,7 @@ body {
 .card{
     position: relative;
     list-style: none;
-    height: 700px;
+    height: 400px;
 
 }
 .background{
@@ -47,6 +47,7 @@ body {
 .card:hover .background{
 transform: scale(1.05) translateZ(0);
 }
+
 .card-grid:hover >  .card:not(:hover) .background{
     filter: brightness(0.5) saturate(0) contrast(0.85) blur();
     }
@@ -106,7 +107,6 @@ transform: scale(1.05) translateZ(0);
     position: fixed;
     bottom: 100px;
     right: 10px;
-    
     
   }
   

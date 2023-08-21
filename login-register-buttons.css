@@ -14,7 +14,7 @@ body {
     font-size: 18px;
     background: url(./background.jpg);
     background-size: cover;
-    background-color: #002244;
+    background-color: #222;
 }
 
 .container {
@@ -173,9 +173,9 @@ body {
   } */
   
   body {
-    background-color: var(--background-color);
+
     font-family: Londrina Solid;
-    color: white;
+    color: #222;
   }
   /* button {
     
