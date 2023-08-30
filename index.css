@@ -159,3 +159,7 @@ button:hover {
     background-position: 0 0;
   }
 }
+
+.h1{
+  color: white !important;  
+}
